@@ -1,4 +1,5 @@
-import { PartyPopper, Ghost, Baby, Briefcase } from 'lucide-react';
+import { PartyPopper, Ghost, Briefcase } from 'lucide-react';
+// Quando reativar Pintura Gestacional, adicione "Baby" no import acima
 
 export default function Services() {
   const servicos = [
@@ -14,12 +15,14 @@ export default function Services() {
       descricao: "Maquiagem artística de terror, caveiras mexicanas e personagens para festas à fantasia.",
       estiloCard: "bg-[#FCE8F0] border-[#F49AC1]"
     },
+    /* Temporariamente desativado:
     {
       icone: <Baby size={44} className="text-[#B58900] mb-4" />,
       titulo: "Pintura Gestacional",
       descricao: "Arte delicada e hipoalergênica na barriga das futuras mamães para ensaios fotográficos.",
       estiloCard: "bg-[#FFF8D6] border-[#FCE373]"
     },
+    */
     {
       icone: <Briefcase size={44} className="text-[#5E3A8C] mb-4" />,
       titulo: "Eventos Corporativos",
@@ -40,7 +43,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicos.map((servico, index) => (
             <div
               key={index}

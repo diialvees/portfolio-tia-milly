@@ -1,5 +1,5 @@
-import { MessageCircle, Camera } from 'lucide-react';
-import { gerarLinkWhatsApp, INSTAGRAM_URL } from '@/constants/contato';
+import { MessageCircle } from 'lucide-react';
+import { gerarLinkWhatsApp } from '@/constants/contato';
 
 export default function Contact() {
   const linkContato = gerarLinkWhatsApp(
@@ -17,7 +17,7 @@ export default function Contact() {
         consultar datas disponíveis e solicitar um orçamento sem compromisso.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-6">
+      <div className="flex justify-center">
         <a
           href={linkContato}
           target="_blank"
@@ -26,16 +26,6 @@ export default function Contact() {
         >
           <MessageCircle size={22} />
           <span>Chamar no WhatsApp</span>
-        </a>
-
-        <a
-          href={INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#5E3A8C] to-[#E83E76] text-white px-8 py-4 rounded-full font-bold text-lg hover:opacity-95 hover:-translate-y-1 active:scale-95 transition-all shadow-lg"
-        >
-          <Camera size={22} />
-          <span>Ver no Instagram</span>
         </a>
       </div>
     </section>
