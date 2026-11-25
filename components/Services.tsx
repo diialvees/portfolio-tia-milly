@@ -1,4 +1,4 @@
-import { PartyPopper, Ghost, Briefcase } from 'lucide-react';
+import { PartyPopper, Ghost, Store } from 'lucide-react';
 // Quando reativar Pintura Gestacional, adicione "Baby" no import acima
 
 export default function Services() {
@@ -24,9 +24,9 @@ export default function Services() {
     },
     */
     {
-      icone: <Briefcase size={44} className="text-[#5E3A8C] mb-4" />,
-      titulo: "Eventos Corporativos",
-      descricao: "Atendimento carinhoso e divertido para inaugurações, escolas e ações promocionais.",
+      icone: <Store size={44} className="text-[#5E3A8C] mb-4" />,
+      titulo: "Espaço Kids e Comércios",
+      descricao: "Atendimento especial para o espaço kids do seu comércio, trazendo um momento divertido e colorido para as crianças.",
       estiloCard: "bg-[#F3EBFC] border-[#C4A6E8]"
     }
   ];
